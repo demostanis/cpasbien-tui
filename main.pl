@@ -286,7 +286,7 @@ sub bottomline {
 	given($state) {
 		when(State::LISTING) {
 			my ($index, $total) = @_;
-			return "$Colors::bold$index$Colors::reset/$Colors::bold$total$Colors::reset, press space for options, j/k to move, / to search";
+			return "$Colors::bold$index$Colors::reset/$Colors::bold$total$Colors::reset, press $Colors::green${Colors::bold}space$Colors::reset for options, $Colors::green${Colors::bold}j$Colors::reset/$Colors::green${Colors::bold}k$Colors::reset to move, $Colors::green${Colors::bold}/$Colors::reset to search";
 		}
 		when(State::FETCHING) {
 			return "Fetching link...";
