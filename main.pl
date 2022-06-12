@@ -97,7 +97,7 @@ sub str {
 	my $leftside = $self->{title};
 	my $rightside = "$self->{size}  $self->{seed} S  $self->{leech} L";
 	my $whitespace;
-	if(length($leftside) + length($rightside) > $Terminal::width) {
+	if(length($leftside) + length($rightside) + 4 > $Terminal::width) {
 		my $size = ($Terminal::width - length($rightside) - 5);
 		$leftside = substr $self->{title}, 0, $size;
 		$leftside .= '…';
