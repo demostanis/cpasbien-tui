@@ -149,7 +149,7 @@ sub search {
 
 sub get_real_link {
 	my $url = shift;
-	get($url) =~ m,telecharger/[^']+,;
+	get($url) =~ m,get_torrent/[^']+,;
 	return "https://cpasbien.ch/$&";
 }
 

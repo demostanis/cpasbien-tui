@@ -4,6 +4,7 @@ fetch torrents from cpasbien.ch from the command line with a pretty interface
 it requires the following modules from CPAN:
 - File::Which
 - LWP::Simple
+- LWP::Protocol::https
 - Term::ReadKey
 
 tested with perl v5.36
